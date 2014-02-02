@@ -21,7 +21,7 @@ public class HandIdentifier {
      */
     public String identify(Set<Card> hand) {
         Preconditions.checkNotNull(hand);
-        Preconditions.checkState(hand.size() <= 5, "currently only supports up to five card hands");
+        Preconditions.checkState(hand.size() <= 5 && hand.size() > 0, "currently only supports hands of 1-5 cards");
 
         final FlushEvaluator flushEvaluator = new FlushEvaluator();
         final boolean hasFlush = flushEvaluator.evaluate(hand);
