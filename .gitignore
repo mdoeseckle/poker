@@ -1,0 +1,5 @@
+# ignore eclipse settings:
+.settings/
+
+# ignore eclipse output directory:
+bin/
