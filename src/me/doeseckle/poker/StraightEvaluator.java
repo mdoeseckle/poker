@@ -61,7 +61,7 @@ public class StraightEvaluator {
 
             if (hasPossibleLowStraight && card.getRank() == Rank.ACE) {
                 // it is possible this ace is part of a low straight, a straight is still possible
-                mTopRank = card.getRank();
+                // but do not adjust the top ranked card, since ACE is low in this straight
                 continue;
             }
 
